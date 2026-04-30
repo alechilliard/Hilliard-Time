@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hilliard Time — Luxury Timepieces</title>
+    <meta name="description" content="Hilliard Time crafts luxury timepieces of uncompromising quality. Each watch is a testament to precision, heritage, and timeless design.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ═══════════════════════════════════════
+         NAVIGATION
+    ═══════════════════════════════════════ -->
+    <nav class="nav" id="nav">
+        <div class="nav__inner">
+
+            <a href="#hero" class="nav__logo">
+                <!--
+                    DROP IN YOUR LOGO HERE:
+                    <img src="assets/logo-white.png" class="nav__logo-img" alt="Hilliard Time">
+                -->
+                <div class="nav__logo-text">
+                    <span class="nav__brand">HILLIARD TIME</span>
+                    <span class="nav__tagline">luxury timepieces</span>
+                </div>
+            </a>
+
+            <ul class="nav__links">
+                <li><a href="#collection" class="nav__link">Collection</a></li>
+                <li><a href="#craftsmanship" class="nav__link">Craftsmanship</a></li>
+                <li><a href="#about" class="nav__link">About</a></li>
+                <li><a href="#contact" class="nav__link nav__link--cta">Inquire</a></li>
+            </ul>
+
+            <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+        <ul>
+            <li><a href="#collection" class="mobile-nav__link">Collection</a></li>
+            <li><a href="#craftsmanship" class="mobile-nav__link">Craftsmanship</a></li>
+            <li><a href="#about" class="mobile-nav__link">About</a></li>
+            <li><a href="#contact" class="mobile-nav__link">Inquire</a></li>
+        </ul>
+    </div>
+
+
+    <!-- ═══════════════════════════════════════
+         HERO
+    ═══════════════════════════════════════ -->
+    <section class="hero" id="hero">
+        <div class="hero__inner">
+
+            <!-- Live Analog Clock -->
+            <div class="hero__clock-wrap">
+                <div class="clock" id="clock">
+                    <div class="clock__outer-ring"></div>
+                    <div class="clock__dial">
+                        <div class="clock__markers" id="clockMarkers"></div>
+                        <div class="clock__hand clock__hand--hour"   id="hourHand"></div>
+                        <div class="clock__hand clock__hand--minute" id="minuteHand"></div>
+                        <div class="clock__hand clock__hand--second" id="secondHand"></div>
+                        <div class="clock__center"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Copy -->
+            <div class="hero__content">
+                <p class="hero__eyebrow reveal">Est. 2024</p>
+                <h1 class="hero__title reveal">
+                    Time, Elevated<br>
+                    <em>to an Art Form</em>
+                </h1>
+                <p class="hero__sub reveal">
+                    Each Hilliard timepiece is a testament to precision,<br>
+                    heritage, and uncompromising luxury.
+                </p>
+                <div class="hero__actions reveal">
+                    <a href="#collection" class="btn btn--primary">Explore the Collection</a>
+                    <a href="#contact" class="btn btn--ghost">Request a Private Viewing</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero__scroll">
+            <span class="hero__scroll-label">Scroll</span>
+            <div class="hero__scroll-bar"></div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════
+         BRAND STATEMENT
+    ═══════════════════════════════════════ -->
+    <section class="statement">
+        <div class="statement__inner reveal">
+            <div class="statement__rule"></div>
+            <blockquote class="statement__quote">
+                "We don't simply make watches.<br>We craft legacies."
+            </blockquote>
+            <div class="statement__rule"></div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════
+         COLLECTION
+    ═══════════════════════════════════════ -->
+    <section class="collection" id="collection">
+        <header class="section-header reveal">
+            <p class="eyebrow">Our Collection</p>
+            <h2 class="section-title">Masterpieces in Motion</h2>
+            <p class="section-sub">Each piece tells a story of incomparable craftsmanship and timeless design.</p>
+        </header>
+
+        <div class="collection__grid">
+
+            <!-- Meridian I -->
+            <article class="watch-card reveal">
+                <div class="watch-card__image-slot">
+                    <!--
+                        REPLACE WITH YOUR PHOTO:
+                        <img src="assets/watches/meridian-i.jpg" alt="Meridian I">
+                    -->
+                    <div class="watch-card__placeholder">
+                        <svg class="watch-card__ph-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                            <circle cx="12" cy="12" r="9"/>
+                            <path d="M12 7v5l3 3"/>
+                            <path d="M12 3v1M12 20v1M3 12h1M20 12h1"/>
+                        </svg>
+                        <span class="watch-card__ph-name">Meridian I</span>
+                        <span class="watch-card__ph-note">Photo Coming Soon</span>
+                    </div>
+                </div>
+                <div class="watch-card__info">
+                    <p class="watch-card__line">The Meridian</p>
+                    <h3 class="watch-card__name">Meridian I</h3>
+                    <p class="watch-card__desc">A masterclass in minimalism. White gold case, hand-stitched alligator strap, hand-wound movement with 72-hour power reserve.</p>
+                    <a href="#contact" class="watch-card__link">Request Details <span aria-hidden="true">→</span></a>
+                </div>
+            </article>
+
+            <!-- Apex Chronograph -->
+            <article class="watch-card reveal">
+                <div class="watch-card__image-slot">
+                    <!--
+                        REPLACE WITH YOUR PHOTO:
+                        <img src="assets/watches/apex-chronograph.jpg" alt="Apex Chronograph">
+                    -->
+                    <div class="watch-card__placeholder">
+                        <svg class="watch-card__ph-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                            <circle cx="12" cy="12" r="9"/>
+                            <path d="M12 7v5l3 3"/>
+                            <path d="M12 3v1M12 20v1M3 12h1M20 12h1"/>
+                        </svg>
+                        <span class="watch-card__ph-name">Apex Chronograph</span>
+                        <span class="watch-card__ph-note">Photo Coming Soon</span>
+                    </div>
+                </div>
+                <div class="watch-card__info">
+                    <p class="watch-card__line">The Apex</p>
+                    <h3 class="watch-card__name">Apex Chronograph</h3>
+                    <p class="watch-card__desc">Bold, commanding, precise. Rose gold case with black ceramic bezel, column-wheel chronograph, 60-hour power reserve.</p>
+                    <a href="#contact" class="watch-card__link">Request Details <span aria-hidden="true">→</span></a>
+                </div>
+            </article>
+
+            <!-- Heritage Tourbillon -->
+            <article class="watch-card reveal">
+                <div class="watch-card__image-slot">
+                    <!--
+                        REPLACE WITH YOUR PHOTO:
+                        <img src="assets/watches/heritage-tourbillon.jpg" alt="Heritage Tourbillon">
+                    -->
+                    <div class="watch-card__placeholder">
+                        <svg class="watch-card__ph-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                            <circle cx="12" cy="12" r="9"/>
+                            <path d="M12 7v5l3 3"/>
+                            <path d="M12 3v1M12 20v1M3 12h1M20 12h1"/>
+                        </svg>
+                        <span class="watch-card__ph-name">Heritage Tourbillon</span>
+                        <span class="watch-card__ph-note">Photo Coming Soon</span>
+                    </div>
+                </div>
+                <div class="watch-card__info">
+                    <p class="watch-card__line">The Heritage</p>
+                    <h3 class="watch-card__name">Heritage Tourbillon</h3>
+                    <p class="watch-card__desc">The pinnacle of Hilliard artistry. Platinum case, hand-engraved guilloché dial, flying tourbillon displayed at 6 o'clock.</p>
+                    <a href="#contact" class="watch-card__link">Request Details <span aria-hidden="true">→</span></a>
+                </div>
+            </article>
+
+            <!-- Nocturne -->
+            <article class="watch-card reveal">
+                <div class="watch-card__image-slot">
+                    <!--
+                        REPLACE WITH YOUR PHOTO:
+                        <img src="assets/watches/nocturne.jpg" alt="Nocturne">
+                    -->
+                    <div class="watch-card__placeholder">
+                        <svg class="watch-card__ph-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                            <circle cx="12" cy="12" r="9"/>
+                            <path d="M12 7v5l3 3"/>
+                            <path d="M12 3v1M12 20v1M3 12h1M20 12h1"/>
+                        </svg>
+                        <span class="watch-card__ph-name">Nocturne</span>
+                        <span class="watch-card__ph-note">Photo Coming Soon</span>
+                    </div>
+                </div>
+                <div class="watch-card__info">
+                    <p class="watch-card__line">The Nocturne</p>
+                    <h3 class="watch-card__name">Nocturne</h3>
+                    <p class="watch-card__desc">Inspired by the night sky. Deep-blue meteorite dial, moonphase complication, brilliant-cut diamond hour indices.</p>
+                    <a href="#contact" class="watch-card__link">Request Details <span aria-hidden="true">→</span></a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════
+         CRAFTSMANSHIP
+    ═══════════════════════════════════════ -->
+    <section class="craft" id="craftsmanship">
+        <header class="section-header reveal">
+            <p class="eyebrow">The Hilliard Standard</p>
+            <h2 class="section-title">Uncompromising in Every Detail</h2>
+        </header>
+
+        <div class="craft__pillars">
+            <div class="craft__pillar reveal">
+                <div class="craft__icon">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 6L6 16v16l18 10 18-10V16L24 6z" stroke="#B09145" stroke-width="1.5" stroke-linejoin="round"/>
+                        <path d="M24 6v36" stroke="#B09145" stroke-width="1.5"/>
+                        <path d="M6 16l18 10 18-10" stroke="#B09145" stroke-width="1.5"/>
+                    </svg>
+                </div>
+                <h3 class="craft__name">Heritage</h3>
+                <p class="craft__desc">Rooted in centuries of horological tradition, every Hilliard timepiece honours the masters who came before while forging its own legacy.</p>
+            </div>
+
+            <div class="craft__pillar reveal">
+                <div class="craft__icon">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="24" cy="24" r="18" stroke="#B09145" stroke-width="1.5"/>
+                        <circle cx="24" cy="24" r="6" stroke="#B09145" stroke-width="1.5"/>
+                        <path d="M24 6v6M24 36v6M6 24h6M36 24h6" stroke="#B09145" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3 class="craft__name">Precision</h3>
+                <p class="craft__desc">Every movement is assembled by hand, individually tested to COSC chronometer standards, and certified to perform within ±2 seconds per day.</p>
+            </div>
+
+            <div class="craft__pillar reveal">
+                <div class="craft__icon">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 6C24 6 10 16 10 28a14 14 0 0028 0C38 16 24 6 24 6z" stroke="#B09145" stroke-width="1.5" stroke-linejoin="round"/>
+                        <path d="M24 18v10M19 28h10" stroke="#B09145" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3 class="craft__name">Materials</h3>
+                <p class="craft__desc">We source only the finest — conflict-free diamonds, 18k gold, double-curved sapphire crystal, and hand-stitched leather from the world's premier tanneries.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════
+         ABOUT
+    ═══════════════════════════════════════ -->
+    <section class="about" id="about">
+        <div class="about__inner">
+
+            <div class="about__image-slot reveal">
+                <!--
+                    REPLACE WITH YOUR PHOTO:
+                    <img src="assets/brand-photo.jpg" alt="Hilliard Time atelier">
+                -->
+                <div class="about__placeholder">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                        <rect x="3" y="3" width="18" height="18" rx="1"/>
+                        <circle cx="8.5" cy="8.5" r="1.5"/>
+                        <path d="M21 15l-5-5L5 21"/>
+                    </svg>
+                    <span>Brand Photo</span>
+                    <span class="watch-card__ph-note">Image Coming Soon</span>
+                </div>
+            </div>
+
+            <div class="about__content reveal">
+                <p class="eyebrow">Our Story</p>
+                <h2 class="about__title">
+                    Born from a Passion<br>
+                    <em>for Perfection</em>
+                </h2>
+                <p class="about__text">Hilliard Time was founded on a singular conviction: that a watch should be more than a timekeeping instrument. It should be an heirloom, a companion, and a statement of who you are.</p>
+                <p class="about__text">Every decision — from the selection of raw materials to the final regulation of the movement — is guided by an unrelenting pursuit of excellence. We make fewer watches by design, because true luxury has never been about volume.</p>
+                <blockquote class="about__pull-quote">
+                    "A Hilliard watch is not bought. It is chosen."
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════
+         CONTACT
+    ═══════════════════════════════════════ -->
+    <section class="contact" id="contact">
+        <div class="contact__inner">
+            <header class="section-header reveal">
+                <p class="eyebrow">Get in Touch</p>
+                <h2 class="section-title">Begin Your Journey</h2>
+                <p class="section-sub">Every inquiry receives a personal response within 24 hours.</p>
+            </header>
+
+            <form class="contact__form reveal" id="contactForm" novalidate>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Phone <span class="optional">(optional)</span></label>
+                        <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000">
+                    </div>
+                    <div class="form-group">
+                        <label for="interest">Interested In</label>
+                        <select id="interest" name="interest">
+                            <option value="" disabled selected>Select a collection</option>
+                            <option value="meridian">Meridian I</option>
+                            <option value="apex">Apex Chronograph</option>
+                            <option value="heritage">Heritage Tourbillon</option>
+                            <option value="nocturne">Nocturne</option>
+                            <option value="general">General Inquiry</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group form-group--full">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Tell us about yourself and your interest in Hilliard Time..."></textarea>
+                </div>
+                <div class="form-submit">
+                    <button type="submit" class="btn btn--primary btn--large">Send Inquiry</button>
+                </div>
+            </form>
+
+            <p class="contact__direct reveal">
+                Or reach us directly at
+                <a href="mailto:inquiries@hilliardtime.com">inquiries@hilliardtime.com</a>
+            </p>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════
+         FOOTER
+    ═══════════════════════════════════════ -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__logo">
+                <p class="footer__brand">HILLIARD TIME</p>
+                <p class="footer__tagline">luxury timepieces</p>
+            </div>
+
+            <nav class="footer__nav" aria-label="Footer navigation">
+                <a href="#collection">Collection</a>
+                <span class="footer__dot" aria-hidden="true">·</span>
+                <a href="#craftsmanship">Craftsmanship</a>
+                <span class="footer__dot" aria-hidden="true">·</span>
+                <a href="#about">About</a>
+                <span class="footer__dot" aria-hidden="true">·</span>
+                <a href="#contact">Inquire</a>
+            </nav>
+
+            <div class="footer__social">
+                <a href="#" aria-label="Hilliard Time on Instagram">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5"/>
+                        <circle cx="12" cy="12" r="5"/>
+                        <circle cx="17.5" cy="6.5" r="0.75" fill="currentColor" stroke="none"/>
+                    </svg>
+                </a>
+                <a href="#" aria-label="Hilliard Time on Facebook">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+                    </svg>
+                </a>
+            </div>
+
+            <p class="footer__copy">© 2024 Hilliard Time. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
